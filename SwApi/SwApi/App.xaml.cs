@@ -9,7 +9,6 @@ namespace SwApi
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
             DependencyService.Register<ISwService, SwService>();
             MainPage = new AppShell();
         }

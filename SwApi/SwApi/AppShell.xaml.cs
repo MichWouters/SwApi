@@ -9,8 +9,6 @@ namespace SwApi
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
-            Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
             Routing.RegisterRoute(nameof(StarWarsCharactersPage), typeof(StarWarsCharactersPage));
             Routing.RegisterRoute(nameof(StarWarsCharacterDetailPage), typeof(StarWarsCharacterDetailPage));
         }
