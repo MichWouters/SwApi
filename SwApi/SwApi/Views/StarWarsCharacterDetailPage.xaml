@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:SwApi.ViewModels;assembly=SwApi"
+             x:Class="SwApi.Views.StarWarsCharacterDetailPage">
+    <ScrollView>
+            <StackLayout >
+                        <Image Source="{Binding Character.Image}"/>    
+                        <Label Text="{Binding Character.Name}" FontSize="Large" TextColor="Aqua"/>
+                        <Label Text="{Binding Character.hair_color}"/> 
+                        <Label Text="{Binding Character.birth_year}"/>
+                        <Label Text="{Binding Character.Gender}"/>
+                        <Label Text="{Binding Character.Height}"/>
+                        <Label Text="{Binding Character.Created}"/>
+                    </StackLayout>
+    </ScrollView>
+</ContentPage>
