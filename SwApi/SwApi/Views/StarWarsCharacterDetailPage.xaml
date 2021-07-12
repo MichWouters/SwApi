@@ -3,7 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:SwApi.ViewModels;assembly=SwApi"
              x:Class="SwApi.Views.StarWarsCharacterDetailPage">
-    <ScrollView>
+    
+    <!--TODO: For an as of yet unknown reason, sometimes the data is not displayed.
+    (Un) commenting the Scrollview should temporarily fix this issue-->
+    <!--<ScrollView>-->
         <StackLayout x:DataType="viewModels:StarWarsCharacterDetailViewModel">
             <Image Source="{Binding Character.Image}"/>
             <Label Text="{Binding Character.Name}" FontSize="Large" TextColor="Aqua"/>
@@ -13,5 +16,5 @@
             <Label Text="{Binding Character.Height}"/>
             <Label Text="{Binding Character.Created}"/>
         </StackLayout>
-    </ScrollView>
+    <!--</ScrollView>-->
 </ContentPage>
