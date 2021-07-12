@@ -7,7 +7,7 @@ using Xamarin.Forms;
 namespace SwApi.ViewModels
 {
     [QueryProperty(nameof(CharacterID), nameof(CharacterID))]
-    public class StarWarsCharacterDetailViewModel
+    public class StarWarsCharacterDetailViewModel: BaseViewModel
     {
         private int characterId;
         public Character Character { get; set; }
@@ -20,6 +20,7 @@ namespace SwApi.ViewModels
             {
                 characterId = value;
                 LoadCharactedIdAsync(value);
+                OnPropertyChanged(nameof(Character));
             }
         }
 

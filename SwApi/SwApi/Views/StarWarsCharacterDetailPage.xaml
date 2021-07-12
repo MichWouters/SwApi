@@ -4,14 +4,14 @@
              xmlns:viewModels="clr-namespace:SwApi.ViewModels;assembly=SwApi"
              x:Class="SwApi.Views.StarWarsCharacterDetailPage">
     <ScrollView>
-            <StackLayout >
-                        <Image Source="{Binding Character.Image}"/>    
-                        <Label Text="{Binding Character.Name}" FontSize="Large" TextColor="Aqua"/>
-                        <Label Text="{Binding Character.hair_color}"/> 
-                        <Label Text="{Binding Character.birth_year}"/>
-                        <Label Text="{Binding Character.Gender}"/>
-                        <Label Text="{Binding Character.Height}"/>
-                        <Label Text="{Binding Character.Created}"/>
-                    </StackLayout>
+        <StackLayout x:DataType="viewModels:StarWarsCharacterDetailViewModel">
+            <Image Source="{Binding Character.Image}"/>
+            <Label Text="{Binding Character.Name}" FontSize="Large" TextColor="Aqua"/>
+            <Label Text="{Binding Character.hair_color}"/>
+            <Label Text="{Binding Character.birth_year}"/>
+            <Label Text="{Binding Character.Gender}"/>
+            <Label Text="{Binding Character.Height}"/>
+            <Label Text="{Binding Character.Created}"/>
+        </StackLayout>
     </ScrollView>
 </ContentPage>
